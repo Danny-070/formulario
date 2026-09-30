@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Deber</title>
+</head>
+
+<body>
+
+    <!-- Creación de la tabla para el título centrada -->
+    <table border="2px" style="margin: auto;">
+        <tr>
+            <td style="text-align: center;">
+                <h2>Formulario de Registro de estudiante</h2>
+                <p>Instituto Superior Tecnológico Quito</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Creación de la tabla principal del formulario centrada -->
+    <table border="1px" style="margin: auto;">
+
+        <!-- Sección 1: Datos personales -->
+        <tr>
+            <td colspan="3">
+                <h3>1.Datos Personales</h3>
+            </td>
+
+        <tr>
+            <!-- Campo para ingresar los nombres -->
+            <td>
+                <label for="nombre"><strong>Nombres:</strong></label>
+                <br>
+                <input type="text" id="nombre" placeholder="Ingrese sus nombres">
+            </td>
+
+            <!-- Campo para ingresar los apellidos -->
+            <td>
+                <label for="Apellidos"><strong>Apellidos</strong></label>
+                <br>
+                <input type="Apellido" placeholder="Ingrese sus apellidos:">
+            </td>
+
+            <!-- Campo para seleccionar la fecha de nacimiento -->
+            <td>
+                <label for=""><strong>Fecha de nacimiento</strong></label>
+                <br>
+                <input type="date">
+            </td>
+        </tr>
+
+        <!-- Segunda fila de datos personales -->
+        <tr>
+            <!-- Campo para ingresar la cédula o pasaporte -->
+            <td>
+                <label for="Cedula"><strong>Cédula / Pasaporte</strong></label>
+                <br>
+                <input type="text" id="Cedula" placeholder="Ingrese su Cédula o Pasaporte">
+            </td>
+
+            <!-- Opciones para seleccionar el género -->
+            <td>
+                <p><strong>Genero:</strong></p>
+                <input type="radio" name="Genero" id="Masculino">Masculino
+                <input type="radio" name="Genero" id="Femenino">Femenino
+                <input type="radio" name="Genero" id="Otro">Otro
+            </td>
+
+            <!-- Lista para seleccionar el estado civil -->
+            <td>
+                <label for="Estado civil"><strong>Estado civil</strong></label>
+                <br>
+                <select name="Estado" id="Estado">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado/a</option>
+                    <option value="Divorciado">Divorciado/a</option>
+                    <option value="Viudo">Viudo</option>
+                </select>
+        </tr>
+
+        <!-- Tercera fila de datos personales -->
+        <tr>
+            <!-- Campo para ingresar el correo electrónico -->
+            <td>
+                <label for="email"><strong>Correo electrónico</strong></label>
+                <br>
+                <input type="email" id="email" placeholder="Ingrese su correo">
+            </td>
+
+            <!-- Campo para ingresar el teléfono -->
+            <td>
+                <label for="telefono"><strong>Teléfono</strong></label>
+                <br>
+                <input type="telefono" id="telefono" placeholder="Ingrese su número de teléfono">
+            </td>
+
+            <!-- Campo para ingresar la dirección -->
+            <td>
+                <label for="dirección"><strong>Dirección</strong></label>
+                <br>
+                <input type="dirección" id="dirección" placeholder="Ingrese su dirección">
+            </td>
+        </tr>
+        </tr>
+
+        <!-- Sección 2: Información académica -->
+        <tr>
+            <td colspan="3">
+                <h3>2. Información académica</h3>
+            </td>
+
+        <tr>
+            <!-- Lista para seleccionar la carrera -->
+            <td>
+                <label for="Cerrar"><strong>Carrera</strong></label>
+                <br>
+                <select name="carrera" id="carrera">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Contabilidad">Desarrollo de Sofwtare</option>
+                    <option value="Informática">Veterinaria</option>
+                    <option value="Ciencias">Marketing</option>
+
+            </td>
+
+            <!-- Lista para seleccionar el nivel -->
+            <td>
+                <label for="Nivel"><strong>Nivel</strong></label>
+                <br>
+                <select name="Nivel" id="Nivel">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Primero">Primero</option>
+                    <option value="Segundo">Segundo</option>
+                    <option value="Tercero">Tercero</option>
+                    <option value="Cuarto">Cuarto</option>
+                    <option value="Quinto">Quinto</option>
+                </select>
+            </td>
+
+            <!-- Opciones para seleccionar la modalidad de estudio -->
+            <td>
+                <p><strong>Modalidad de estudio:</strong></p>
+                <input type="radio" name="Modalidad" id="Presencial">Presencial
+                <input type="radio" name="Modalidad" id="Linea">Linea
+                <input type="radio" name="Modalidad" id="Híbrida">Híbrida
+            </td>
+
+        <tr>
+            <!-- Lista para seleccionar el periodo académico -->
+            <td>
+                <label for="Periodo"><strong>Periodo académico</strong></label>
+                <br>
+                <select name="Periodo" id="Periodo">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Cuatrimestre">Cuatrimestre</option>
+                    <option value="Semestre">Semestre</option>
+                    <option value="Bimestre">Bimestre</option>
+                </select>
+            </td>
+
+            <!-- Opciones para seleccionar el turno -->
+            <td>
+                <p><strong>Turno</strong></p>
+                <input type="radio" name="mañana">Mañana
+                <input type="radio" name="tarde">tarde
+                <input type="radio" name="noche">Noche
+            </td>
+
+            <!-- Lista para seleccionar cómo se enteró del instituto -->
+            <td>
+                <label for="entero"><Strong>¿Cómo se entero de nosotros?</Strong></label>
+                <br>
+                <select name="entero" id="entero">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Tik tok">Tik tok</option>
+                    <option value="Facebook">Facebook</option>
+                </select>
+            </td>
+        </tr>
+        </tr>
+
+        <!-- Sección 3: Habilidad y conocimiento -->
+        <tr>
+            <td colspan="3">
+                <h3>3. Habilidad y conocimiento</h3>
+            </td>
+
+        <tr>
+            <!-- Áreas de interés que puede seleccionar el estudiante -->
+            <td colspan="2">
+                <strong>Marque sus áreas de interés</strong>
+                <br>
+                <input type="checkbox" name="" id="">Desarrollo Web
+                <input type="checkbox" name="" id="">Inteligencia Artificial
+                <input type="checkbox" name="" id="">Redes y Seguridad
+                <input type="checkbox" name="" id="">Bases de Datos
+                <p>
+                    <input type="checkbox" name="" id="">Desarrollo Móvil
+                    <input type="checkbox" name="" id="">Ciencia de Datos
+                    <input type="checkbox" name="" id="">Robótica
+                    <input type="checkbox" name="" id="">Otras
+                </p>
+            </td>
+
+            <!-- Opciones para seleccionar el nivel de conocimiento -->
+            <td>
+                <strong>Nivel de conocimiento en programación</strong>
+                <br>
+                <input type="radio" name="Alto">Alto
+                <input type="radio" name="Medio">Medio
+                <input type="radio" name="Bajo">Bajo
+            </td>
+        </tr>
+
+        <!-- Sección 4: Información adicional -->
+        <tr>
+            <td colspan="3">
+                <h3>4. Información Adicional</h3>
+            </td>
+
+            <tr>
+                <!-- Campo para cargar la fotografía -->
+                <td>
+                    <strong>Cargue su fotografía:</span></strong>
+                    <br><br>
+
+                    <input type="file" accept=".jpg,.jpeg,.png">
+                    <br>
+                    <small>formatos permitidos: JPG, PNG (Máx. 2MB)</small>
+                </td>
+
+                <!-- Campo para adjuntar documentos -->
+                <td>
+                    <strong>Adjuntar documentos (Opcional)</strong>
+                    <br><br>
+
+                    <input type="file" accept=".pdf">
+
+                    <br>
+                    <small>PDF (Máx. 5MB)</small>
+                </td>
+
+                <!-- Campo para escribir observaciones -->
+                <td>
+                    <strong>Observaciones</strong>
+                    <br><br>
+
+                    <textarea placeholder="Escriba Información Adicional..." rows="3" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <!-- Botones para registrar y limpiar el formulario -->
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <button type="submit">Registrar</button>
+                    <button type="submit">Limpiar</button>
+                </td>
+            </tr>
+        </tr>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
